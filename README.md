@@ -1,6 +1,6 @@
 # food-court-service-
-Project Architecture: N-Tire/MVC Architecture
-SDLC Methodologies: Waterfall/Spiral Model
+Project Architecture: N-Tire/MVC Architecture, 
+SDLC Methodologies: Waterfall/Spiral Model,
 Technology and Language: MS.Net 3.5 with visual C#
 
 The Food court service is web based project and  Actual purpose of this application is book the desired food in online and to provide the services to the persons who are the 
