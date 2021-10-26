@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="customerMasterPage.master.cs" Inherits="Customer_customerMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 577px;
+        }
+        .style2
+        {
+            height: 168px;
+        }
+        .style3
+        {
+            height: 320px;
+            width: 83%;
+        }
+        .style4
+        {
+            height: 22px;
+        }
+        .style5
+        {
+            height: 320px;
+            width: 171px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server" style="background-color: #000000">
+   
+        <table class="style1">
+            <tr>
+                <td class="style2" colspan="2">
+                    <asp:Image ID="Image1" runat="server" Height="179px" 
+                        ImageUrl="~/Customer/images/DiningServices.jpg" Width="996px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style5">
+                    <asp:Menu ID="Menu1" runat="server" Font-Bold="True" ForeColor="#990000" 
+                        Height="266px" onmenuitemclick="Menu1_MenuItemClick" Width="171px" 
+                        BackColor="#FFFBD6" DynamicHorizontalOffset="2" Font-Names="Verdana" 
+                        Font-Size="0.8em" StaticSubMenuIndent="10px">
+                        <StaticSelectedStyle BackColor="#FFCC66" />
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                        <DynamicMenuStyle BackColor="#FFFBD6" />
+                        <DynamicSelectedStyle BackColor="#FFCC66" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/Customer/myprofile.aspx" Text="My Profile" 
+                                Value="My Profile"></asp:MenuItem>
+                            <asp:MenuItem Text="View Items" Value="View Items" Selectable="False">
+                                <asp:MenuItem NavigateUrl="~/Customer/veg.aspx" Text="Vegetarian" 
+                                    Value="Vegetarian"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Customer/non-veg.aspx" Text="Non-Vegetarian" 
+                                    Value="Non-Vegetarian"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Customer/sendrequsts.aspx" Text="Send Request" 
+                                Value="Send Request"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Customer/sendcomplaints.aspx" 
+                                Text="Send Complaint" Value="Send Complaint"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Customer/logout.aspx" Text="Logout" Value="Logout">
+                            </asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+                <td class="style3">
+   
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p style="font-size: 25px; color: #FFFFFF">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+        
+        </asp:ContentPlaceHolder>
+   
+                </td>
+            </tr>
+            <tr>
+                <td class="style4" colspan="2">
+                    <asp:Image ID="Image2" runat="server" Height="23px" 
+                        ImageUrl="~/Customer/images/s copy.jpg" style="margin-top: 0px" 
+                        Width="1001px" />
+                </td>
+            </tr>
+        </table>
+   
+    </form>
+</body>
+</html>
